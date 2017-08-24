@@ -62,8 +62,6 @@
         <jackson.version>2.5.1</jackson.version>
         <!-- echarts -->
         <echarts.version>2.2.0</echarts.version>
-        <!-- gson -->
-        <gson.version>2.2.4</gson.version>
         <!-- commons-lang3 -->
         <commons-lang3.version>3.3.2</commons-lang3.version>
         <!-- commons-filreupuload -->
@@ -112,24 +110,58 @@
 
     <dependencies>
     
+    
+<dependency>
+    <groupId>com.alibaba</groupId>
+    <artifactId>dubbo</artifactId>
+    <version>2.5.3</version>
+    	<exclusions>
+        <exclusion>
+            <artifactId>spring</artifactId>
+            <groupId>org.springframework</groupId>
+        </exclusion>
+    </exclusions>
+</dependency>
+
+<dependency>  
+    <groupId>com.fasterxml.jackson.core</groupId>  
+    <artifactId>jackson-databind</artifactId>  
+    <version>2.5.1</version>  
+</dependency> 
+
+
+    	<dependency>
+<groupId>org.apache.zookeeper</groupId>
+<artifactId>zookeeper</artifactId>
+<version>3.4.6</version>
+</dependency>
+<dependency> 
+<groupId>com.101tec</groupId>
+
+<artifactId>zkclient</artifactId>
+<version>0.10</version>
+</dependency>
+		
+		<dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>fastjson</artifactId>
+		    <version>1.2.32</version>
+		</dependency>
     	 <!-- servlet -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
             <version>${jstl.version}</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
             <version>${servlet.version}</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>
             <version>${jsp.version}</version>
-            <scope>provided</scope>
         </dependency>
 
         <!-- JSR303 Bean Validator -->
