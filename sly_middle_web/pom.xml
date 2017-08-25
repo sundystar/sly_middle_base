@@ -7,11 +7,10 @@
     <artifactId>sly_middle_base</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>sly_middle_base</groupId>
+  
+  <groupId>sly_middle_web</groupId>
   <artifactId>sly_middle_web</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>sly_middle_web</name>
-  <url>http://maven.apache.org</url>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
