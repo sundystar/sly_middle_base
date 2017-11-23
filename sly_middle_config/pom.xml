@@ -22,7 +22,7 @@
         <!-- servlet -->
         <servlet.version>2.5</servlet.version>
         <!-- springframework -->
-        <spring-framework.version>4.1.6.RELEASE</spring-framework.version>
+        <spring-framework.version>5.0.0.RELEASE</spring-framework.version>
         <spring.ldap.version>2.0.2.RELEASE</spring.ldap.version>
         <!-- spring-data-jpa -->
         <spring-data-jpa.version>1.7.2.RELEASE</spring-data-jpa.version>
@@ -39,7 +39,7 @@
         <!-- log4j2 -->
         <log4j2.version>2.2</log4j2.version>
         <!-- Test -->
-        <junit.version>4.11</junit.version>
+        <junit.version>4.12</junit.version>
         <!-- mockito -->
         <mockito.version>1.9.5</mockito.version>
         <!-- mysql -->
@@ -106,10 +106,17 @@
         <jetty.version>9.2.7.v20150116</jetty.version>
         <!-- jrebel-maven-plugin -->
         <jrebel-maven-plugin.version>1.1.5</jrebel-maven-plugin.version>
+        <spring-data-elasticsearch.version>3.0.0.RELEASE</spring-data-elasticsearch.version>
     </properties>
 
     <dependencies>
     
+    <dependency>
+	    <groupId>org.apache.httpcomponents</groupId>
+	    <artifactId>httpclient</artifactId>
+	    <version>4.5.2</version>
+	</dependency>
+
     
 <dependency>
     <groupId>com.alibaba</groupId>
@@ -275,11 +282,6 @@
 
 
         <!-- mongodb spring -->
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-mongodb</artifactId>
-            <version>${spring.mongodb.version}</version>
-        </dependency>
         <dependency>
             <groupId>org.mongodb</groupId>
             <artifactId>mongo-java-driver</artifactId>
